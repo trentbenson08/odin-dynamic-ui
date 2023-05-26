@@ -1,0 +1,42 @@
+html{
+  font-size: 1.5rem;
+}
+header{
+  background-color: gray;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+}
+img{
+  pointer-events: none;
+}
+
+.drop-container{
+  height: 1.75rem;
+  width: 1.75rem;
+}
+.drop-button{
+  user-select: none;
+}
+.drop-button:hover{
+  background-color: #ffffff;
+}
+.drop-button:active{
+  background-color: #cccccc;
+}
+
+.drop-card.hidden{
+  position: relative;
+  top: -4rem;
+}
+.drop-card{
+  visibility: visible;
+  width: 5rem;
+  position: relative;
+  top: .1rem;
+  bottom: 0rem;
+  left: .1rem;
+  right: 0rem;
+  z-index: -1;
+  transition: top 300ms ease-in-out;
+}
